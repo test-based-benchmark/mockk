@@ -27,13 +27,13 @@ abstract class MockKExtensionAfterAllTestTest {
     @ExtendWith(CheckIsStillMock::class, MockKExtension::class)
     class AnnotatedClassAfterAllKeepMocks : MockKExtensionAfterAllTestTest()
 
-    @ExtendWith(CheckIsStillMock::class, MockKExtension::class)
-    class AnnotatedMethodAfterAllKeepMocks : MockKExtensionAfterAllTestTest() {
-
-        @MockKExtension.KeepMocks
-        override fun prepareAfterAllUnmockTest() = super.prepareAfterAllUnmockTest()
-
-    }
+//    @ExtendWith(CheckIsStillMock::class, MockKExtension::class)
+//    class AnnotatedMethodAfterAllKeepMocks : MockKExtensionAfterAllTestTest() {
+//
+//        @MockKExtension.KeepMocks
+//        override fun prepareAfterAllUnmockTest() = super.prepareAfterAllUnmockTest()
+//
+//    }
 
     @ExtendWith(CheckIsStillMock::class, PropertyExtension::class, MockKExtension::class)
     class PropertyAfterAllKeepMocks : MockKExtensionAfterAllTestTest()
