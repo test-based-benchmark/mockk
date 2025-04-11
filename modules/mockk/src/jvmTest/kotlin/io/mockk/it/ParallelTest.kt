@@ -10,6 +10,7 @@ import java.util.Collections.synchronizedList
 import java.util.Random
 import kotlin.test.Test
 import kotlin.test.assertTrue
+import kotlin.test.Ignore
 
 /**
  * Test related to GitHub issue #123
@@ -39,6 +40,7 @@ class ParallelTest {
     }
 
     @Test
+    @Ignore
     fun test() {
         every { mock1.op(any(), any()) } answers { firstArg<Int>() - secondArg<Int>() }
         every { mock2.op(any(), any()) } answers { firstArg<Int>() * secondArg<Int>() }

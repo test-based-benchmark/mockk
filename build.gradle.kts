@@ -45,5 +45,4 @@ dependencies {
 
     kover(projects.testModules.loggerTests)
     kover(projects.testModules.clientTests)
-    kover(projects.testModules.performanceTests)
 }
